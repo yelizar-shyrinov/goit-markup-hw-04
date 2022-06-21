@@ -15,19 +15,21 @@
 </head>
 
 <body>
-    <header class="header container">
-        <nav class="header-nav">
-            <a class="logo" href="./index.html">Web<span class="half-logo">Studio</span></a>
-            <ul class="header-list list">
-                <li><a class="header-link current-page" href="./index.html">Студия</a></li>
-                <li><a class="header-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="header-link" href="./Contacts">Контакты</a></li>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a class="logo" href="./index.html">Web<span class="half-logo">Studio</span></a>
+                <ul class="header-list list">
+                    <li><a class="header-link current-page" href="./index.html">Студия</a></li>
+                    <li><a class="header-link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="header-link" href="./Contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="nav-list list">
+                <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="header-contact" href="tel:+380961111111">+38 (096) 111-11-11</a></li>
             </ul>
-        </nav>
-        <ul class="nav-list list">
-            <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contact" href="tel:+380961111111">+38 (096) 111-11-11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -36,9 +38,9 @@
                 <button class="order-button button" type="button">Заказать услугу</button>
             </div>
         </section>
-        <div class="scroll-list">
-            <section class="section container">
-                <h2 class="section-title team-title">Наши преимущества</h2>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title team-title visually-hidden">Наши преимущества</h2>
                 <ul class="list advantages-list">
                     <li class="advantages-item">
                         <h3 class="section-title skills">внимание к деталям</h3>
@@ -61,8 +63,10 @@
                             заданий.</p>
                     </li>
                 </ul>
-            </section>
-            <section class="section container">
+            </div>
+        </section>
+        <section class="section">
+            <div class="container images-container">
                 <h2 class="section-title team-title">Чем мы занимаемся</h2>
                 <ul class="list portfolio-images-list">
                     <li class="images-item"><img src="./img/webstudio/img1.jpg"
@@ -72,40 +76,42 @@
                     <li class="images-item"> <img src="./img/webstudio/img3.jpg" alt="Графический планшет" width="370"
                             height="294" /></li>
                 </ul>
-            </section>
-        </div>
-        <section class="section container">
-            <h2 class="section-title team-title">Наша команда</h2>
-            <ul class="list card-set team-list">
-                <li class="team-item card-set-item">
-                    <img src="./img/webstudio/human1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-                    <div class="team-wrapper">
-                        <h3 class="section-title item">Игорь Демьяненко</h3>
-                        <p class="work" lang="en">Product Designer</p>
-                    </div>
-                </li>
-                <li class="team-item card-set-item">
-                    <img src="./img/webstudio/human2.jpg" alt="Ольга Репина" width="270" height="260" />
-                    <div class="team-wrapper">
-                        <h3 class="section-title item">Ольга Репина</h3>
-                        <p class="work" lang="en">Developer</p>
-                    </div>
-                </li>
-                <li class="team-item card-set-item">
-                    <img src="./img/webstudio/human3.jpg" alt="Николай Тарасов" width="270" height="260" />
-                    <div class="team-wrapper">
-                        <h3 class="section-title item">Николай Тарасов</h3>
-                        <p class="work" lang="en">Marketing</p>
-                    </div>
-                </li>
-                <li class="team-item card-set-item">
-                    <img src="./img/webstudio/human4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-                    <div class="team-wrapper">
-                        <h3 class="section-title item">Михаил Ермаков</h3>
-                        <p class="work" lang="en">UI Designer</p>
-                    </div>
-                </li>
-            </ul>
+            </div>
+        </section>
+        <section class="section team-section">
+            <div class="container team-container">
+                <h2 class="section-title team-title">Наша команда</h2>
+                <ul class="list card-set team-list">
+                    <li class="team-item card-set-item">
+                        <img src="./img/webstudio/human1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <div class="team-wrapper">
+                            <h3 class="section-title item">Игорь Демьяненко</h3>
+                            <p class="work" lang="en">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="team-item card-set-item">
+                        <img src="./img/webstudio/human2.jpg" alt="Ольга Репина" width="270" height="260" />
+                        <div class="team-wrapper">
+                            <h3 class="section-title item">Ольга Репина</h3>
+                            <p class="work" lang="en">Developer</p>
+                        </div>
+                    </li>
+                    <li class="team-item card-set-item">
+                        <img src="./img/webstudio/human3.jpg" alt="Николай Тарасов" width="270" height="260" />
+                        <div class="team-wrapper">
+                            <h3 class="section-title item">Николай Тарасов</h3>
+                            <p class="work" lang="en">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="team-item card-set-item">
+                        <img src="./img/webstudio/human4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                        <div class="team-wrapper">
+                            <h3 class="section-title item">Михаил Ермаков</h3>
+                            <p class="work" lang="en">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -116,8 +122,11 @@
                     <li>
                         <p class="footer-address">г.Киев,пр-т Леси Украинки,26</p>
                     </li>
-                    <li><a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="footer-link-item"><a class="footer-link" href="tel:+380961111111">+38 (096) 111-11-11</a>
+                    <li>
+                        <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a class="footer-link" href="tel:+380961111111">+38 (096) 111-11-11</a>
                     </li>
                 </ul>
             </address>
