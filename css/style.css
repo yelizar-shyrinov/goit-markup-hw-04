@@ -157,9 +157,23 @@ a {
   margin-left: auto;
 }
 
+.header-contact {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list .header-contact:hover,
 .nav-list .header-contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.envelope-contacts-icon {
+  margin-right: 10px;
+}
+
+.smartphone-contacts-icon {
+  margin-right: 10px;
 }
 
 .hero {
@@ -168,6 +182,23 @@ a {
   text-align: center;
 
   background-color: var(--dark-bg-color);
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/webstudio/img4.jpg);
+  background-color: #c4c4c4;
 }
 
 .hero-title {
@@ -230,12 +261,26 @@ a {
   margin-right: 30px;
   width: 270px;
 }
+
+.advantages-icon {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  justify-content: center;
+}
+
 .advantages-item:last-child {
   margin-right: 0;
 }
 
 .filter-button {
   padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
   color: var(--title-text-color);
@@ -313,6 +358,46 @@ a {
   text-align: center;
 }
 
+.constans-clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}
+.client-icon {
+  fill: #afb1b8;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+}
+
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .images-container {
   padding-bottom: 0;
 }
@@ -333,6 +418,11 @@ a {
   margin-bottom: 0;
 }
 .portfolio-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
   background: var(--white);
 }
 
@@ -358,14 +448,92 @@ a {
 }
 
 .work {
+  margin-bottom: 16px;
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.18;
 }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.social-media-icon {
+  fill: #afb1b8;
+}
+
+.social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon {
+  fill: var(--white);
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-strong {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-icons {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.social-footer {
+  display: flex;
+}
+
+.social-footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-footer-item:hover,
+.social-footer-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-group-icon {
+  fill: var(--white);
+}
+
 .apps-list {
   margin-top: -15px;
   --items: 3;
 }
+
 .apps-list-item-description {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eee;
@@ -394,6 +562,7 @@ a {
 }
 
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 
