@@ -160,30 +160,17 @@ a {
 .header-contact {
   display: flex;
   align-items: center;
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
-.nav-list .header-contact:hover,
-.nav-list .header-contact:focus {
+.contacts-icon {
+  margin-right: 10px;
+}
+
+.header-contact:hover,
+.header-contact:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.envelope-contacts-icon {
-  margin-right: 10px;
-  fill: #757575;
-}
-
-.smartphone-contacts-icon {
-  margin-right: 10px;
-  fill: #757575;
-}
-.nav-list .envelope-contacts-icon:hover,
-.nav-list .envelope-contacts-icon:focus {
-  fill: var(--accent-color);
-}
-
-.nav-list .smartphone-contacts-icon:hover,
-.nav-list .smartphone-contacts-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -194,6 +181,7 @@ a {
 
   background-color: var(--dark-bg-color);
 }
+
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -330,6 +318,12 @@ a {
   line-height: 1.87;
 }
 
+.portfolio-item-list:hover,
+.portfolio-item-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .section-title {
   font-weight: 500;
   font-size: 16px;
@@ -445,12 +439,6 @@ a {
   border: 1px solid #eeeeee;
 
   background: var(--white);
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .images-item {
